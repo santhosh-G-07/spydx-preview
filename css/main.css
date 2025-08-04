@@ -132,7 +132,7 @@ body{
 	min-height: 300px;
 	position: relative;
 }
-#about .inner-overlay, #services .inner-overlay, #projects .inner-overlay ,
+#about .inner-overlay, #services .inner-overlay, #Projects .inner-overlay ,
 #contact .inner-overlay{
 	background:rgba(0,0,0,0.7);
 	position: absolute;
@@ -162,7 +162,7 @@ body{
 #services-faq .card{
 	cursor: pointer;
 }
-#projects{
+#Projects{
 	background:url('../img/video.jpg');
 	background-attachment: fixed;
 	background-size: cover;
@@ -170,7 +170,7 @@ body{
 	min-height: 300px;
 	position: relative;
 }
-#projects-post img{
+#Projects-post img{
 	height: 200px;
 	width: 100%;
 }
