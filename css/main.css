@@ -1,0 +1,401 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin-top: 70px;
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    background: #000;
+}
+
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+.navbar .webT {
+    font-size: 20px;
+}
+
+.brand-text {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* =====================================================
+   SLIDER / CAROUSEL
+===================================================== */
+
+.carousel-item {
+    height: 500px;
+}
+
+.crs-img-1,
+.crs-img-2,
+.crs-img-3,
+.crs-img-4 {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.crs-img-1 { background-image: url('../img/slider-img1.jpg'); }
+.crs-img-2 { background-image: url('../img/slider-img2.jpg'); }
+.crs-img-3 { background-image: url('../img/slider-img3.jpg'); }
+.crs-img-4 { background-image: url('../img/slider-img4.jpg'); }
+
+/* =====================================================
+   SHOWCASE
+===================================================== */
+
+#showcase .fas {
+    font-size: 35px;
+}
+
+/* =====================================================
+   GET STARTED SECTION
+===================================================== */
+
+#get-started {
+    background: url('../img/showcase2.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 250px;
+}
+
+#get-started .inner-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    inset: 0;
+}
+
+/* =====================================================
+   INFO SECTION
+===================================================== */
+
+#info .infoS {
+    margin-top: 70px;
+}
+
+#info img {
+    border-radius: 5px;
+}
+
+/* =====================================================
+   VIDEO SECTION
+===================================================== */
+
+#video {
+    position: relative;
+    background: url('../img/video.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    min-height: 300px;
+}
+
+#video .video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+#video .fas {
+    color: #ff0000;
+    font-size: 50px;
+}
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+#gallery img {
+    width: 100%;
+    max-height: 200px;
+}
+
+/* =====================================================
+   FOOTER (OLD)
+===================================================== */
+
+#footer {
+    background: #000;
+}
+
+#footer .fab {
+    font-size: 25px;
+    color: #fff;
+    border: 1px solid #7f8c8d;
+    padding: 5px;
+}
+
+#footer .fab:hover {
+    color: #ff0000;
+    border-color: #000;
+}
+
+/* =====================================================
+   ABOUT / SERVICES / PROJECTS / CONTACT HEADERS
+===================================================== */
+
+#about,
+#services,
+#Projects,
+#contact {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    position: relative;
+}
+
+#about {
+    background-image: url('../img/about/back.jpg');
+}
+
+#services {
+    background-image: url('../img/slider-img4.jpg');
+}
+
+#Projects {
+    background-image: url('../img/video.jpg');
+}
+
+#contact {
+    background-image: url('../img/gallery7.jpg');
+}
+
+#about .inner-overlay,
+#services .inner-overlay,
+#Projects .inner-overlay,
+#contact .inner-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    inset: 0;
+}
+
+#about-services .fas {
+    font-size: 50px;
+}
+
+/* =====================================================
+   SERVICES FAQ / PROJECT POSTS
+===================================================== */
+
+#services-faq {
+    height: 400px;
+}
+
+#services-faq .card {
+    cursor: pointer;
+}
+
+#Projects-post img {
+    width: 100%;
+    height: 200px;
+}
+
+/* =====================================================
+   TRAINING PAGE HERO (FIXED & CLEAN)
+===================================================== */
+
+#training-hero {
+    position: relative;
+    min-height: 45vh;
+    background-image: url('../img/training-hero.jpg');
+    background-size: cover;
+    background-position: center 35%;
+	color: rgb(234, 237, 240);
+}
+
+#training-hero .inner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.55)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-overlay p {
+    max-width: 750px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+}
+/* =====================================================
+   PROJECT GRID (FIXED & UNIFORM)
+===================================================== */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.project-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-body h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.project-body p {
+    font-size: 0.95rem;
+    margin: 12px 0 20px;
+    flex-grow: 1;
+}
+
+/* =====================================================
+   SHARED SECTIONS (NEW DESIGN)
+===================================================== */
+
+.section-light {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.section-dark {
+    padding: 80px 0;
+    background: #2f353b;
+    color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-weight: 700;
+}
+
+.section-title.light p {
+    color: #bbb;
+}
+
+/* =====================================================
+   FEATURE / COURSE / INFO CARDS
+===================================================== */
+
+.feature-card,
+.info-card {
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.green { border-top: 4px solid #28a745; }
+.blue  { border-top: 4px solid #007bff; }
+.red   { border-top: 4px solid #dc3545; }
+
+.course-card {
+    background: #3b4148;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.course-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* =====================================================
+   CTA + NEW FOOTER
+===================================================== */
+
+.cta {
+    padding: 70px 0;
+    background: #000;
+    text-align: center;
+}
+
+.footer {
+    background: #111;
+    color: #aaa;
+    padding: 25px 0;
+    text-align: center;
+}
+
+/* =====================================================
+   RESPONSIVE FIXES
+===================================================== */
+
+@media (max-width: 991px) {
+    #info .infoS { margin-top: 0; }
+    #gallery img { height: 120px; }
+}
+
+@media (max-width: 767px) {
+    #info p { font-size: 15px; }
+    #info h3 { font-size: 20px; }
+    #services-faq h5 { font-size: 13px; }
+    #services-faq p { font-size: 10px; }
+}
+
+@media (max-width: 575px) {
+    #showcase .col-lg-4.col-md-4 { width: 60%; margin: auto; }
+    #info .infoS { width: 70%; margin: auto auto 25px; }
+    #gallery img { width: 80%; height: 200px; }
+    #services-faq { height: 600px; }
+}
+
+@media (max-width: 420px) {
+    .navbar .navbar-brand { width: 75%; }
+    #showcase .lead,
+    #get-started .lead { font-size: 16px; }
+}
