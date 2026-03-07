@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SpydX — Next-Gen Tech Solutions | AI, Web & Automation</title>
+	<meta name="description" content="SpydX is a tech startup delivering AI-powered solutions, custom web development, smart automation, and training programs for businesses and students.">
 
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/uikit.min.css"> 
-	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
-	<title>spydX</title>
+	<!-- Open Graph -->
+	<meta property="og:title" content="SpydX — Next-Gen Tech Solutions">
+	<meta property="og:description" content="AI-powered solutions, custom web development, smart automation, and training programs.">
+	<meta property="og:image" content="https://thespydx.com/img/logo.png">
+	<meta property="og:url" content="https://thespydx.com/">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="SpydX">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+	<link rel="apple-touch-icon" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fontawesome/css/all.css">
+
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWQS24XP0Q"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-YWQS24XP0Q');
+	</script>
 </head>
 <body>
-<!-- Navbar Section Start -->
-<nav class="navbar navbar-dark navbar-expand-lg"  
-     uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark navbar-expand-lg">
     <div class="container">
         <a href="index.html" class="navbar-brand">
-            <img src="img/logo.png" class="img-fluid p-0" style="width: 15%; filter: brightness(1) invert(0);">
-            <div class="ml-2 p-0 d-inline webT"></div>
+            <img src="img/logo.png" alt="SpydX Logo">
+            <span class="brand-text">Spyd<span class="brand-x">X</span></span>
         </a>
-        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navBar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navBar">
             <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-
-                <!-- ⭐ NEW TRAINING TAB -->
-                <li class="nav-item">
-                    <a class="nav-link" href="training.html">Training</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<!-- Nav Section End -->
 
-<!-- Slider Section Start -->
-<section id="slider" class="bg-dark"> 
+<!-- Hero Slider -->
+<section id="slider">
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
@@ -70,12 +69,10 @@
 		<div class="carousel-inner" role="listbox">
 			<div class="carousel-item crs-img-1 active">
 				<div class="container">
-					<div class="carousel-caption pb-5 mb-5 text-left">
-						<h2 class="display-4 text-light" >SpydX</h2>
-						<p class="lead">
-							Pioneering next-gen tech solutions with a fusion of AI, automation, and seamless design for the future of business.
-						</p>
-						<a href="#info" class="btn btn-success">Explore More</a>
+					<div class="carousel-caption pb-5 mb-5 text-center">
+						<h2 class="display-4"><span class="brand-colored">Spyd<span class="brand-x">X</span></span></h2>
+						<p>Pioneering next-gen tech solutions with a fusion of AI, automation, and seamless design for the future of business.</p>
+						<a href="#info" class="btn btn-brand">Explore More</a>
 					</div>
 				</div>
 			</div>
@@ -83,32 +80,26 @@
 				<div class="container">
 					<div class="carousel-caption mb-5 text-center">
 						<h2 class="display-4 text-light">Smart. Scalable. SpydX.</h2>
-						<p>
-							Custom software, smart automation, and intuitive platforms tailored to elevate your brand's digital presence.
-						</p>
-						<a href="#showcase" class="btn btn-warning">What We Do</a>
+						<p>Custom software, smart automation, and intuitive platforms tailored to elevate your brand's digital presence.</p>
+						<a href="#showcase" class="btn btn-brand">What We Do</a>
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item crs-img-3">
 				<div class="container">
-					<div class="carousel-caption pb-5 mb-5 text-right">
+					<div class="carousel-caption pb-5 mb-5 text-center">
 						<h2 class="display-4 text-light">Driven By Innovation</h2>
-						<p>
-							We engineer digital ecosystems with precision, performance, and purpose to power your next breakthrough.
-						</p>
-						<a href="#get-started" class="btn btn-info">Start Your Journey</a>
+						<p>We engineer digital ecosystems with precision, performance, and purpose to power your next breakthrough.</p>
+						<a href="#get-started" class="btn btn-brand-outline">Start Your Journey</a>
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item crs-img-4">
 				<div class="container">
-					<div class="carousel-caption pb-5 mb-5 text-left">
+					<div class="carousel-caption pb-5 mb-5 text-center">
 						<h2 class="display-4 text-light">Your Tech Ally</h2>
-						<p>
-							Partner with SpydX for smart systems, secure solutions, and strategies that scale with your vision.
-						</p>
-						<a href="./contact.html" class="btn btn-success">Get in Touch</a>
+						<p>Partner with SpydX for smart systems, secure solutions, and strategies that scale with your vision.</p>
+						<a href="./contact.html" class="btn btn-brand">Get in Touch</a>
 					</div>
 				</div>
 			</div>
@@ -119,192 +110,209 @@
 		<a href="#myCarousel" class="carousel-control-next" data-slide="next">
 			<span class="carousel-control-next-icon"></span>
 		</a>
-	</div>		
+	</div>
 </section>
-<!-- Slider Section End -->
 
-<!-- Showcase Section Start -->
+<!-- Showcase -->
 <section id="showcase">
 	<div class="container">
 		<div class="row py-5 text-center">
-			<div class="col-lg-4 col-md-4">
-				<i class="fas fa-cogs mb-3"></i>
+			<div class="col-lg-4 col-md-4 mb-4">
+				<i class="fas fa-cogs"></i>
 				<h3>Intelligent Automation</h3>
-				<p class="lead mt-2">We build smart systems that automate tasks, reduce costs, and supercharge productivity for modern businesses.</p>
+				<p class="lead">We build smart systems that automate tasks, reduce costs, and supercharge productivity for modern businesses.</p>
 			</div>
-			<div class="col-lg-4 col-md-4">
-				<i class="fas fa-cloud mb-3"></i>
+			<div class="col-lg-4 col-md-4 mb-4">
+				<i class="fas fa-cloud"></i>
 				<h3>Cloud-Driven Solutions</h3>
-				<p class="lead mt-2">From scalable cloud apps to robust APIs — we architect platforms built to grow with your business, securely and seamlessly.</p>
+				<p class="lead">From scalable cloud apps to robust APIs — we architect platforms built to grow with your business, securely and seamlessly.</p>
 			</div>
-			<div class="col-lg-4 col-md-4">
-				<i class="fas fa-cart-plus mb-3"></i>
+			<div class="col-lg-4 col-md-4 mb-4">
+				<i class="fas fa-cart-plus"></i>
 				<h3>Digital Commerce</h3>
-				<p class="lead mt-2">Empowering online businesses with cutting-edge eCommerce tools, integrated payments, and real-time insights.</p>
+				<p class="lead">Empowering online businesses with cutting-edge eCommerce tools, integrated payments, and real-time insights.</p>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- Showcase Section End -->
 
-<!-- Get Started Section Start -->
+<!-- Get Started -->
 <section id="get-started" class="text-center py-5 text-light">
 	<div class="inner-overlay">
 		<div class="container">
 			<div class="row">
-				<div class="col mt-5 pt-4 gC">
-					<h3 class="text-light">Let’s Build Something Great Together</h3>
-					<p class="lead">
-						At SpydX, we don’t just deliver code. We craft experiences, engineer performance, and empower digital transformation. Ready to kickstart your journey?
-					</p>
+				<div class="col gC">
+					<h3 class="text-light">Let's Build Something Great Together</h3>
+					<p class="lead">At SpydX, we don't just deliver code. We craft experiences, engineer performance, and empower digital transformation. Ready to kickstart your journey?</p>
+					<a href="contact.html" class="btn btn-brand mt-3">Start a Project</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- Get Started Section End -->
 
-<!-- Info Section Start -->
+<!-- Why Choose SpydX -->
 <section id="info" class="py-5">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6 justify-content-center text-left infoS">
+			<div class="col-lg-6 col-md-6 col-sm-6 infoS">
 				<h3>Why Choose SpydX?</h3>
-				<p class="lead">
-					We blend innovation with reliability. From startup prototypes to enterprise-grade platforms, SpydX is your trusted partner for smart, scalable, and secure tech solutions.
-				</p>
-				<a href="#contact" class="btn btn-outline-dark">Let’s Talk</a>
+				<p class="lead">We blend innovation with reliability. From startup prototypes to enterprise-grade platforms, SpydX is your trusted partner for smart, scalable, and secure tech solutions.</p>
+				<a href="contact.html" class="btn btn-outline-dark">Let's Talk</a>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 align-self-center">
-				<img src="img/info.jpg" class="img-fluid" alt="SpydX info section image">
+				<img src="img/info.jpg" class="img-fluid" alt="Why Choose SpydX" loading="lazy">
 			</div>
 		</div>
 	</div>
 </section>
-<!-- Info Section End -->
 
-
-	<!-- Video Section Start -->
-	<section id="video" class="text-center text-light">
-		<div class="video-overlay">
-			<div class="container">
-				<div class="row">
-					<div class="col mt-5 pt-4">
-						<div uk-lightbox>
-							<a href="https://youtu.be/uVqv7vIKOwM">
-								<i class="fas fa-play"></i>
-							</a>
-						</div>
-						<h2 class=" mt-5 text-light">Hack The Planet</h2>
-						<p class="lead">Click Play Button To See</p>
+<!-- Video Section -->
+<section id="video" class="text-center text-light">
+	<div class="video-overlay">
+		<div class="container">
+			<div class="row">
+				<div class="col mt-5 pt-4">
+					<div>
+						<a href="javascript:void(0)">
+							<i class="fas fa-play"></i>
+						</a>
 					</div>
+					<h2 class="mt-4 text-light">See SpydX In Action</h2>
+					<p class="lead">Watch how we build the future — one project at a time</p>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!-- Video Section End -->
-<!-- Tech Stack Section Start -->
-<section id="techstack" class="py-5 bg-light">
+	</div>
+</section>
+
+<!-- Tech Stack -->
+<section id="techstack" class="py-5">
 	<div class="container">
 		<div class="row text-center">
 			<div class="col">
-				<h2 class="mb-0">Our Tech Stack</h2>
-				<p class="lead m-0">We build with the latest and greatest tools in the industry</p>
+				<h2>Our Tech Stack</h2>
+				<p class="lead">We build with the latest and greatest tools in the industry</p>
 			</div>
 		</div>
-
 		<div class="row mt-5 text-center">
-			<!-- Row 1 -->
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/aws.png" alt="AWS" class="img-fluid" style="height:60px;">
+				<img src="img/aws.png" alt="AWS" loading="lazy">
 				<p class="mt-2 small">AWS</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/python.png" alt="Python" class="img-fluid" style="height:60px;">
+				<img src="img/python.png" alt="Python" loading="lazy">
 				<p class="mt-2 small">Python</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/javascript.png" alt="JavaScript" class="img-fluid" style="height:60px;">
+				<img src="img/javascript.png" alt="JavaScript" loading="lazy">
 				<p class="mt-2 small">JavaScript</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/typescript.png" alt="TypeScript" class="img-fluid" style="height:60px;">
+				<img src="img/typescript.png" alt="TypeScript" loading="lazy">
 				<p class="mt-2 small">TypeScript</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/reactjs.png" alt="ReactJS" class="img-fluid" style="height:60px;">
+				<img src="img/reactjs.png" alt="ReactJS" loading="lazy">
 				<p class="mt-2 small">ReactJS</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/redux.png" alt="Redux" class="img-fluid" style="height:60px;">
+				<img src="img/redux.png" alt="Redux" loading="lazy">
 				<p class="mt-2 small">Redux</p>
 			</div>
-
-			<!-- Row 2 -->
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/nodejs.png" alt="Node.js" class="img-fluid" style="height:60px;">
+				<img src="img/nodejs.png" alt="Node.js" loading="lazy">
 				<p class="mt-2 small">Node.js</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/express.png" alt="Express" class="img-fluid" style="height:60px;">
+				<img src="img/express.png" alt="Express" loading="lazy">
 				<p class="mt-2 small">Express</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/mongodb.png" alt="MongoDB" class="img-fluid" style="height:60px;">
+				<img src="img/mongodb.png" alt="MongoDB" loading="lazy">
 				<p class="mt-2 small">MongoDB</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/postgresql.png" alt="PostgreSQL" class="img-fluid" style="height:60px;">
+				<img src="img/postgresql.png" alt="PostgreSQL" loading="lazy">
 				<p class="mt-2 small">PostgreSQL</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/mysql.png" alt="MySQL" class="img-fluid" style="height:60px;">
+				<img src="img/mysql.png" alt="MySQL" loading="lazy">
 				<p class="mt-2 small">MySQL</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/docker.png" alt="Docker" class="img-fluid" style="height:60px;">
+				<img src="img/docker.png" alt="Docker" loading="lazy">
 				<p class="mt-2 small">Docker</p>
 			</div>
-
-			<!-- Row 3 -->
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/tailwind.png" alt="Tailwind" class="img-fluid" style="height:60px;">
+				<img src="img/tailwind.png" alt="Tailwind" loading="lazy">
 				<p class="mt-2 small">Tailwind</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/mui.png" alt="MUI" class="img-fluid" style="height:60px;">
+				<img src="img/mui.png" alt="MUI" loading="lazy">
 				<p class="mt-2 small">MUI</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/figma.png" alt="Figma" class="img-fluid" style="height:60px;">
+				<img src="img/figma.png" alt="Figma" loading="lazy">
 				<p class="mt-2 small">Figma</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/framer.png" alt="Framer" class="img-fluid" style="height:60px;">
+				<img src="img/framer.png" alt="Framer" loading="lazy">
 				<p class="mt-2 small">Framer</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/overleaf.webp" alt="Three.js" class="img-fluid" style="height:60px;">
-				<p class="mt-2 small">OverLeaf</p>
+				<img src="img/overleaf.webp" alt="Overleaf" loading="lazy">
+				<p class="mt-2 small">Overleaf</p>
 			</div>
 			<div class="col-6 col-md-2 mb-4">
-				<img src="img/gsap.png" alt="GSAP" class="img-fluid" style="height:60px;">
+				<img src="img/gsap.png" alt="GSAP" loading="lazy">
 				<p class="mt-2 small">GSAP</p>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- Tech Stack Section End -->
-<!-- Newsletter Signup Section Start -->
-<section id="subscribe" class="text-center py-5 bg-dark text-light">
+
+<!-- Testimonials -->
+<section id="testimonials" class="text-center">
+	<div class="container">
+		<h2>What Our Clients Say</h2>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 mb-4">
+				<div class="testimonial-card">
+					<i class="fas fa-quote-left quote-icon"></i>
+					<p>"SpydX built our hospital management system from scratch. Clean UI, responsive design, and delivered before deadline. Truly professional team."</p>
+					<div class="client-name">Dr. Dinesh Kumar</div>
+					<div class="client-role">SMCC Bhavani Hospital</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mb-4">
+				<div class="testimonial-card">
+					<i class="fas fa-quote-left quote-icon"></i>
+					<p>"Got my resume and portfolio done by SpydX. Within a week, I started getting interview calls. The design was clean and ATS-friendly."</p>
+					<div class="client-name">Priya M.</div>
+					<div class="client-role">Software Engineer</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 mb-4">
+				<div class="testimonial-card">
+					<i class="fas fa-quote-left quote-icon"></i>
+					<p>"SpydX designed and developed our bakery website beautifully. They captured our brand perfectly — warm, modern, and easy to navigate. Orders started coming in right away!"</p>
+					<div class="client-name">Aditicakes</div>
+					<div class="client-role"><a href="https://aditicakes.onrender.com/" target="_blank" style="color: var(--primary-light);">aditicakes.onrender.com</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Newsletter -->
+<section id="subscribe" class="text-center py-5 text-light">
 	<div class="container">
 		<div class="row">
 			<div class="col">
 				<h2 class="text-light">Stay In The Loop With SpydX</h2>
-				<p class="lead">
-					Get updates, insights, and insider news directly from our team. No spam, just the good stuff.
-				</p>
-				<form class="form-inline justify-content-center" action="mailto:contact@thespydx.com" method="POST" enctype="text/plain">
+				<p class="lead">Get updates, insights, and insider news directly from our team. No spam, just the good stuff.</p>
+				<form class="form-inline justify-content-center" onsubmit="event.preventDefault(); alert('Thank you for subscribing! We\'ll keep you posted.'); this.reset();">
 					<input type="text" name="name" placeholder="Your Name" class="form-control m-2" required>
 					<input type="email" name="email" placeholder="Your Email" class="form-control m-2" required>
 					<input type="submit" value="Subscribe" class="btn btn-primary m-2">
@@ -314,45 +322,40 @@
 		</div>
 	</div>
 </section>
-<!-- Newsletter Signup Section End -->
 
-
-<!-- Footer Section Start -->
-<footer id="footer" class="py-5 bg-dark text-light">
+<!-- Footer -->
+<footer id="footer" class="py-5 text-light">
 	<div class="container text-center">
-		<h2 class="display-5 fw-bold mb-3 text-success">spydX</h2>
+		<h2 class="display-5 fw-bold mb-3 brand-colored">Spyd<span class="brand-x">X</span></h2>
 		<p class="lead">Innovating your future with AI-powered solutions.</p>
-		
-		<!-- Social Media Links -->
+
 		<div class="d-flex justify-content-center my-4">
-			<a href="https://www.facebook.com/profile.php?id=61578774855523" class="text-light px-3 fs-4"><i class="fab fa-facebook-f"></i></a>
-			<a href="https://www.linkedin.com/company/107144620" class="text-light px-3 fs-4"><i class="fab fa-linkedin-in"></i></a>
-			<a href="https://x.com/spydX_" class="text-light px-3 fs-4"><i class="fab fa-twitter"></i></a>
-			<a href="https://www.instagram.com/spydx_tech/" class="text-light px-3 fs-4"><i class="fab fa-instagram"></i></a>
-			<a href="https://github.com/santhosh-G-07" class="text-light px-3 fs-4"><i class="fab fa-github"></i></a>
+			<a href="https://www.facebook.com/profile.php?id=61578774855523" target="_blank" class="text-light px-2"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.linkedin.com/company/107144620" target="_blank" class="text-light px-2"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://x.com/spydX_" target="_blank" class="text-light px-2"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.instagram.com/spydx_tech/" target="_blank" class="text-light px-2"><i class="fab fa-instagram"></i></a>
 		</div>
 
-		<!-- Quick Links (Optional) -->
-	<div class="mb-3">
-    <a href="./index.html" class="text-light text-decoration-none mx-2">Home</a> |
-    <a href="./about.html" class="text-light text-decoration-none mx-2">About</a> |
-    <a href="./services.html" class="text-light text-decoration-none mx-2">Services</a> |
-    <a href="./projects.html" class="text-light text-decoration-none mx-2">Projects</a> |
-    <a href="./training.html" class="text-light text-decoration-none mx-2">Training</a> |
-    <a href="./contact.html" class="text-light text-decoration-none mx-2">Contact</a>
-</div>
+		<div class="mb-3">
+			<a href="./index.html" class="text-light text-decoration-none mx-2">Home</a> |
+			<a href="./about.html" class="text-light text-decoration-none mx-2">About</a> |
+			<a href="./services.html" class="text-light text-decoration-none mx-2">Services</a> |
+			<a href="./projects.html" class="text-light text-decoration-none mx-2">Projects</a> |
+			<a href="./training.html" class="text-light text-decoration-none mx-2">Training</a> |
+			<a href="./contact.html" class="text-light text-decoration-none mx-2">Contact</a>
+		</div>
 
-
-		<!-- Footer Note -->
-		<p class="small text-muted mb-0">© 2025 <span class="text-success">thespydx.com</span> — All rights reserved.</p>
+		<p class="small text-muted mb-0">© 2026 <span class="brand-colored">thespydx.com</span> — All rights reserved.</p>
 	</div>
 </footer>
-<!-- Footer Section End -->
 
-	<script type="text/javascript" src="js/jquery-slim.min.js"></script>
-	<script type="text/javascript" src="js/popper.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/uikit.min.js"></script>
-	<script type="text/javascript" src="js/uikit-icons.min.js"></script>
+<!-- WhatsApp Float -->
+<a href="https://wa.me/918428702189" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+	<i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="js/jquery-slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

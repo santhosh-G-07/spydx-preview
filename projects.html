@@ -1,232 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>spydX</title>
+	<title>SpydX — Our Projects | Real-World Tech Solutions</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Explore SpydX projects — from AI healthcare tools and IoT automation to custom AI models and developer toolkits.">
 
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/uikit.min.css"> 
-	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
-<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
-<link rel="apple-touch-icon" href="/img/favicon.png">
+	<meta property="og:title" content="SpydX — Our Projects">
+	<meta property="og:description" content="Real-world AI, IoT, and web projects built by SpydX.">
+	<meta property="og:image" content="https://thespydx.com/img/logo.png">
+	<meta property="og:url" content="https://thespydx.com/projects.html">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
 
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+	<link rel="apple-touch-icon" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fontawesome/css/all.css">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWQS24XP0Q"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-YWQS24XP0Q');
+	</script>
 </head>
 <body>
 
-<!-- Navbar Section Start -->
-<nav class="navbar navbar-dark navbar-expand-lg"  
-     uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+<!-- Navbar -->
+<nav class="navbar navbar-dark navbar-expand-lg">
     <div class="container">
         <a href="index.html" class="navbar-brand">
-            <img src="img/logo.png" class="img-fluid p-0" style="width: 15%; filter: brightness(1) invert(0);">
-            <div class="ml-2 p-0 d-inline webT"></div>
+            <img src="img/logo.png" alt="SpydX Logo">
+            <span class="brand-text">Spyd<span class="brand-x">X</span></span>
         </a>
-        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navBar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navBar">
             <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-
-                <!-- ⭐ NEW TRAINING TAB -->
-                <li class="nav-item">
-                    <a class="nav-link" href="training.html">Training</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item active"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<!-- Nav Section End -->
 
-	
-	<!-- Projects Section Start -->
-	<section id="Projects" class="text-center py-5 text-light">
-		<div class="inner-overlay">
-			<div class="container">
-				<div class="row">
-					<div class="col mt-5 pt-4">
-						<h1 class="text-light">Projects</h1 >
-						<p class="lead">
-						From AI breakthroughs to real-time automation — here’s what we’ve been building at SpydX.
-					</p>
+<!-- Projects Hero -->
+<section id="projects" class="text-center py-5 text-light">
+	<div class="inner-overlay">
+		<div class="container">
+			<div class="row">
+				<div class="col mt-5 pt-4">
+					<h1 class="text-light">Projects</h1>
+					<p class="lead">From AI breakthroughs to real-time automation — here's what we've been building at SpydX.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- Projects Section End -->
-<!-- Project Cards Start -->
+
+<!-- Project Cards -->
 <section id="project-post" class="py-5">
   <div class="container">
-
     <div class="row">
-
-      <!-- Project Card -->
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="project-card h-100">
-          <div class="project-img">
-            <img src="img/project1.jpg" alt="SMCC Bhavani Hospital">
-          </div>
+          <div class="project-img"><img src="img/project1.jpg" alt="SMCC Bhavani Hospital" loading="lazy"></div>
           <div class="project-body">
             <h4>SMCC Bhavani Hospital</h4>
-            <small class="text-muted">Responsive Web App</small>
-            <p>
-              An end-to-end appointment booking and management system tailored
-              for clinics and hospitals with real-time updates.
-            </p>
+            <small>Responsive Web App</small>
+            <p>An end-to-end appointment booking and management system tailored for clinics and hospitals with real-time updates.</p>
             <a href="#" class="btn btn-dark btn-block mt-auto">View Project</a>
           </div>
         </div>
       </div>
-
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="project-card h-100">
-          <div class="project-img">
-            <img src="img/project2.jpg" alt="Medico">
-          </div>
+          <div class="project-img"><img src="img/project2.jpg" alt="Medico" loading="lazy"></div>
           <div class="project-body">
             <h4>Medico</h4>
-            <small class="text-muted">Healthcare Assistant</small>
-            <p>
-              Smart health advisory platform using NLP and ML for
-              symptom analysis and pharmacy connectivity.
-            </p>
+            <small>Healthcare Assistant</small>
+            <p>Smart health advisory platform using NLP and ML for symptom analysis and pharmacy connectivity.</p>
             <a href="#" class="btn btn-dark btn-block mt-auto">View Project</a>
           </div>
         </div>
       </div>
-
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="project-card h-100">
-          <div class="project-img">
-            <img src="img/project3.jpg" alt="Eczlipze">
-          </div>
+          <div class="project-img"><img src="img/project3.jpg" alt="Eczlipze" loading="lazy"></div>
           <div class="project-body">
             <h4>Eczlipze</h4>
-            <small class="text-muted">IoT Home Automation</small>
-            <p>
-              Voice and sensor-controlled IoT automation for lights,
-              fans, security systems, and more.
-            </p>
+            <small>IoT Home Automation</small>
+            <p>Voice and sensor-controlled IoT automation for lights, fans, security systems, and more.</p>
             <a href="#" class="btn btn-dark btn-block mt-auto">View Project</a>
           </div>
         </div>
       </div>
-
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="project-card h-100">
-          <div class="project-img">
-            <img src="img/project4.jpg" alt="Vymoi">
-          </div>
+          <div class="project-img"><img src="img/project4.jpg" alt="Vymoi" loading="lazy"></div>
           <div class="project-body">
             <h4>Vymoi</h4>
-            <small class="text-muted">Custom AI Model</small>
-            <p>
-              Proprietary AI model for analytics and decision-making,
-              adaptable across enterprise use cases.
-            </p>
+            <small>Custom AI Model</small>
+            <p>Proprietary AI model for analytics and decision-making, adaptable across enterprise use cases.</p>
             <a href="#" class="btn btn-dark btn-block mt-auto">View Project</a>
           </div>
         </div>
       </div>
-
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="project-card h-100">
-          <div class="project-img">
-            <img src="img/project5.jpg" alt="Smart Resume Analyzer">
-          </div>
+          <div class="project-img"><img src="img/project5.jpg" alt="Smart Resume Analyzer" loading="lazy"></div>
           <div class="project-body">
             <h4>Smart Resume Analyzer</h4>
-            <small class="text-muted">AI Resume Screening</small>
-            <p>
-              AI-powered resume screening using skill parsing,
-              keyword matching, and ML ranking.
-            </p>
+            <small>AI Resume Screening</small>
+            <p>AI-powered resume screening using skill parsing, keyword matching, and ML ranking.</p>
             <a href="#" class="btn btn-dark btn-block mt-auto">View Project</a>
           </div>
         </div>
       </div>
-
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="project-card h-100">
-          <div class="project-img">
-            <img src="img/project6.jpg" alt="SpydX Stack">
-          </div>
+          <div class="project-img"><img src="img/project6.jpg" alt="SpydX Stack" loading="lazy"></div>
           <div class="project-body">
             <h4>SpydX Stack</h4>
-            <small class="text-muted">Internal Dev Toolkit</small>
-            <p>
-              Developer-first toolkit with reusable components,
-              deployment scripts, and testing frameworks.
-            </p>
+            <small>Internal Dev Toolkit</small>
+            <p>Developer-first toolkit with reusable components, deployment scripts, and testing frameworks.</p>
             <a href="#" class="btn btn-dark btn-block mt-auto">View Project</a>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
-<!-- Project Cards End -->
 
-
-<!-- Footer Section Start -->
-<footer id="footer" class="py-5 bg-dark text-light">
+<!-- Footer -->
+<footer id="footer" class="py-5 text-light">
 	<div class="container text-center">
-		<h2 class="display-5 fw-bold mb-3 text-success">spydX</h2>
+		<h2 class="display-5 fw-bold mb-3 brand-colored">Spyd<span class="brand-x">X</span></h2>
 		<p class="lead">Innovating your future with AI-powered solutions.</p>
-		
-		<!-- Social Media Links -->
 		<div class="d-flex justify-content-center my-4">
-			<a href="https://www.facebook.com/profile.php?id=61578774855523" class="text-light px-3 fs-4"><i class="fab fa-facebook-f"></i></a>
-			<a href="https://www.linkedin.com/company/107144620" class="text-light px-3 fs-4"><i class="fab fa-linkedin-in"></i></a>
-			<a href="https://x.com/spydX_" class="text-light px-3 fs-4"><i class="fab fa-twitter"></i></a>
-			<a href="https://www.instagram.com/spydx_tech/" class="text-light px-3 fs-4"><i class="fab fa-instagram"></i></a>
-			<a href="https://github.com/santhosh-G-07" class="text-light px-3 fs-4"><i class="fab fa-github"></i></a>
+			<a href="https://www.facebook.com/profile.php?id=61578774855523" target="_blank" class="text-light px-2"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.linkedin.com/company/107144620" target="_blank" class="text-light px-2"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://x.com/spydX_" target="_blank" class="text-light px-2"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.instagram.com/spydx_tech/" target="_blank" class="text-light px-2"><i class="fab fa-instagram"></i></a>
 		</div>
-
 		<div class="mb-3">
-    <a href="./index.html" class="text-light text-decoration-none mx-2">Home</a> |
-    <a href="./about.html" class="text-light text-decoration-none mx-2">About</a> |
-    <a href="./services.html" class="text-light text-decoration-none mx-2">Services</a> |
-    <a href="./projects.html" class="text-light text-decoration-none mx-2">Projects</a> |
-    <a href="./training.html" class="text-light text-decoration-none mx-2">Training</a> |
-    <a href="./contact.html" class="text-light text-decoration-none mx-2">Contact</a>
-</div>
-
-		<!-- Footer Note -->
-		<p class="small text-muted mb-0">© 2025 <span class="text-success">thespydx.com</span> — All rights reserved.</p>
+			<a href="./index.html" class="text-light text-decoration-none mx-2">Home</a> |
+			<a href="./about.html" class="text-light text-decoration-none mx-2">About</a> |
+			<a href="./services.html" class="text-light text-decoration-none mx-2">Services</a> |
+			<a href="./projects.html" class="text-light text-decoration-none mx-2">Projects</a> |
+			<a href="./training.html" class="text-light text-decoration-none mx-2">Training</a> |
+			<a href="./contact.html" class="text-light text-decoration-none mx-2">Contact</a>
+		</div>
+		<p class="small text-muted mb-0">© 2026 <span class="brand-colored">thespydx.com</span> — All rights reserved.</p>
 	</div>
 </footer>
-<!-- Footer Section End -->
-	<script type="text/javascript" src="js/jquery-slim.min.js"></script>
-	<script type="text/javascript" src="js/popper.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/uikit.min.js"></script>
-	<script type="text/javascript" src="js/uikit-icons.min.js"></script>
+
+<a href="https://wa.me/918428702189" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script src="js/jquery-slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
