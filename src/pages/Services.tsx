@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Code, Bot, FileText, ChevronDown } from "lucide-react";
+import { Code, Bot, FileText, ChevronDown, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import HeroSection from "@/components/HeroSection";
@@ -13,21 +13,21 @@ const tabs = [
 ];
 
 const webServices = [
-  { title: "Portfolio Website", price: "Starts from ₹999", desc: "Perfect for students, freelancers, or anyone who wants an elegant personal brand online.", features: ["Responsive Single Page", "LinkedIn, Resume, Projects", "SEO Optimized", "Fast Delivery"], tier: "Basic Package", cta: "Get Started" },
-  { title: "Static Website", price: "Starts from ₹5999", desc: "For small businesses or professionals needing a crisp, clean online presence.", features: ["Up to 5 Pages", "Contact Form Integration", "Hosting Guidance", "Clean UI Design"], tier: "Essential Package", cta: "Book Now" },
-  { title: "Dynamic Website", price: "Starts from ₹9999", desc: "Feature-rich web apps with admin panels, databases, and dynamic content.", features: ["Login System + Admin Panel", "Database Integration", "Custom CMS Options", "Real-time Data & Forms"], tier: "Premium Package", cta: "Let's Build" },
+  { title: "Portfolio Website", price: "Starts from ₹999", desc: "Perfect for students, freelancers, or anyone who wants an elegant personal brand online.", features: ["Responsive Single Page", "LinkedIn, Resume, Projects", "SEO Optimized", "Fast Delivery"], tier: "Basic Package", cta: "Get Started", highlight: false },
+  { title: "Static Website", price: "Starts from ₹5999", desc: "For small businesses or professionals needing a crisp, clean online presence.", features: ["Up to 5 Pages", "Contact Form Integration", "Hosting Guidance", "Clean UI Design"], tier: "Essential Package", cta: "Book Now", highlight: true },
+  { title: "Dynamic Website", price: "Starts from ₹9999", desc: "Feature-rich web apps with admin panels, databases, and dynamic content.", features: ["Login System + Admin Panel", "Database Integration", "Custom CMS Options", "Real-time Data & Forms"], tier: "Premium Package", cta: "Let's Build", highlight: false },
 ];
 
 const mlServices = [
-  { title: "Chatbot Integration", price: "Starts from ₹1999", desc: "Smart assistants trained on your data. Website, WhatsApp, or custom platform.", features: ["NLP-powered conversation", "FAQ or Data-driven Chat", "Website/WhatsApp Embed", "Custom UI/UX Support"], tier: "Starter AI Bot", cta: "Launch Bot" },
-  { title: "Detection Models", price: "Starts from ₹4999", desc: "Smart vision & audio models for object detection, emotion tracking, and more.", features: ["Object & Face Detection", "Gesture & Emotion Tracking", "OpenCV / YOLO / TensorFlow", "Live Camera Feed Processing"], tier: "Vision AI", cta: "Detect Now" },
-  { title: "Custom AI Models", price: "Starts from ₹7999", desc: "Predictive analytics, recommendation systems, fraud detection — full-stack ML.", features: ["Scikit-learn / TensorFlow / PyTorch", "Classification & Regression", "End-to-end ML Pipelines", "Cloud or Local Deployment"], tier: "Custom ML Project", cta: "Let's Train" },
+  { title: "Chatbot Integration", price: "Starts from ₹1999", desc: "Smart assistants trained on your data. Website, WhatsApp, or custom platform.", features: ["NLP-powered conversation", "FAQ or Data-driven Chat", "Website/WhatsApp Embed", "Custom UI/UX Support"], tier: "Starter AI Bot", cta: "Launch Bot", highlight: false },
+  { title: "Detection Models", price: "Starts from ₹4999", desc: "Smart vision & audio models for object detection, emotion tracking, and more.", features: ["Object & Face Detection", "Gesture & Emotion Tracking", "OpenCV / YOLO / TensorFlow", "Live Camera Feed Processing"], tier: "Vision AI", cta: "Detect Now", highlight: true },
+  { title: "Custom AI Models", price: "Starts from ₹7999", desc: "Predictive analytics, recommendation systems, fraud detection — full-stack ML.", features: ["Scikit-learn / TensorFlow / PyTorch", "Classification & Regression", "End-to-end ML Pipelines", "Cloud or Local Deployment"], tier: "Custom ML Project", cta: "Let's Train", highlight: false },
 ];
 
 const resumeServices = [
-  { title: "Fresher Resume", price: "Starts from ₹399", desc: "Kickstart your career with a resume that highlights your strengths and skills.", features: ["One-page clean design", "ATS-compatible layout", "Custom fonts & sections", "Editable format included"], tier: "For Fresh Graduates", cta: "Get Started" },
-  { title: "Professional Resume", price: "Starts from ₹599", desc: "Built for working professionals aiming to climb the ladder or switch careers.", features: ["2-page executive layout", "Skill-based & role-centric", "Optional cover letter", "Delivered in 48 hours"], tier: "For Experienced Pros", cta: "Upgrade Now" },
-  { title: "US Standard Resume", price: "Starts from ₹899", desc: "Crafted as per international formatting and hiring standards.", features: ["US/Canada format compliance", "LinkedIn profile optimization", "Section-wise keyword strategy", "PDF + Word + Canva delivery"], tier: "For International Roles", cta: "Make it Global" },
+  { title: "Fresher Resume", price: "Starts from ₹399", desc: "Kickstart your career with a resume that highlights your strengths and skills.", features: ["One-page clean design", "ATS-compatible layout", "Custom fonts & sections", "Editable format included"], tier: "For Fresh Graduates", cta: "Get Started", highlight: false },
+  { title: "Professional Resume", price: "Starts from ₹599", desc: "Built for working professionals aiming to climb the ladder or switch careers.", features: ["2-page executive layout", "Skill-based & role-centric", "Optional cover letter", "Delivered in 48 hours"], tier: "For Experienced Pros", cta: "Upgrade Now", highlight: true },
+  { title: "US Standard Resume", price: "Starts from ₹899", desc: "Crafted as per international formatting and hiring standards.", features: ["US/Canada format compliance", "LinkedIn profile optimization", "Section-wise keyword strategy", "PDF + Word + Canva delivery"], tier: "For International Roles", cta: "Make it Global", highlight: false },
 ];
 
 const faqs = [
@@ -51,7 +51,7 @@ const FAQItem = ({ q, a }: { q: string; a: string }) => {
     <div className="bg-card rounded-xl border border-border overflow-hidden">
       <button onClick={() => setOpen(!open)} className="w-full px-6 py-4 flex items-center justify-between text-left">
         <span className="font-medium font-display">{q}</span>
-        <ChevronDown className={`h-5 w-5 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`} />
+        <ChevronDown className={`h-5 w-5 text-muted-foreground transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
       </button>
       <AnimatePresence>
         {open && (
@@ -89,7 +89,7 @@ const Services = () => {
               onClick={() => setActiveTab(tab.id)}
               className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm transition-all duration-300 ${
                 activeTab === tab.id
-                  ? "bg-gradient-cyan text-primary-foreground shadow-cyan"
+                  ? "bg-gradient-accent text-primary-foreground shadow-cyan"
                   : "bg-secondary text-muted-foreground hover:text-foreground border border-border"
               }`}
             >
@@ -115,30 +115,33 @@ const Services = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="bg-card rounded-xl border border-border overflow-hidden hover:border-primary/30 transition-all group"
+                className={`bg-card rounded-xl border overflow-hidden transition-all group ${
+                  s.highlight
+                    ? "border-primary/40 shadow-glow scale-[1.02]"
+                    : "border-border hover:border-primary/30"
+                }`}
               >
-                <div className="p-1 bg-gradient-cyan">
-                  <div className="bg-card px-6 py-4 text-center">
-                    <h3 className="text-xl font-bold font-display">{s.title}</h3>
+                {s.highlight && (
+                  <div className="bg-gradient-accent text-primary-foreground text-center text-xs font-bold py-1.5 tracking-wider uppercase">
+                    Most Popular
                   </div>
-                </div>
+                )}
                 <div className="p-6">
-                  <p className="text-2xl font-bold text-primary mb-3 font-display">{s.price}</p>
-                  <p className="text-muted-foreground mb-6">{s.desc}</p>
+                  <p className="text-sm text-muted-foreground mb-1">{s.tier}</p>
+                  <h3 className="text-xl font-bold font-display mb-2">{s.title}</h3>
+                  <p className="text-2xl font-bold text-primary mb-4 font-display">{s.price}</p>
+                  <p className="text-muted-foreground mb-6 text-sm">{s.desc}</p>
                   <ul className="space-y-3 mb-6">
                     {s.features.map((f) => (
                       <li key={f} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                        <Check className="w-4 h-4 text-primary flex-shrink-0" />
                         {f}
                       </li>
                     ))}
                   </ul>
-                  <Button asChild className="w-full bg-gradient-cyan text-primary-foreground font-semibold">
+                  <Button asChild className={`w-full font-semibold ${s.highlight ? "bg-gradient-accent text-primary-foreground shadow-cyan" : "bg-secondary text-foreground hover:bg-primary/10"}`}>
                     <Link to="/contact">{s.cta}</Link>
                   </Button>
-                </div>
-                <div className="px-6 py-3 bg-secondary/50 text-center text-sm text-muted-foreground font-medium">
-                  {s.tier}
                 </div>
               </motion.div>
             ))}
