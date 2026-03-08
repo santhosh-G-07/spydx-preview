@@ -44,6 +44,9 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
+            <div className="ml-3 pl-3 border-l border-border">
+              <ThemeSwitcher />
+            </div>
           </div>
 
           {/* Mobile Toggle */}
