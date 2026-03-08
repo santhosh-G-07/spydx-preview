@@ -151,7 +151,7 @@ const Training = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="outline" className="border-primary/30 text-primary hover:bg-primary/10">
-              <a href="https://thespydx.com/brochure/spydx_brochure.pdf" download>
+              <a href="/brochure/spydx_brochure.pdf" download="spydx_brochure.pdf">
                 <Download className="mr-2 h-4 w-4" /> Request Brochure
               </a>
             </Button>
