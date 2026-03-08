@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "@/assets/logo.png";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -43,6 +44,9 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
+            <div className="ml-3 pl-3 border-l border-border">
+              <ThemeSwitcher />
+            </div>
           </div>
 
           {/* Mobile Toggle */}
@@ -80,6 +84,10 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
+              <div className="px-4 py-3 flex items-center gap-3">
+                <span className="text-sm text-muted-foreground">Theme</span>
+                <ThemeSwitcher />
+              </div>
             </div>
           </motion.div>
         )}
