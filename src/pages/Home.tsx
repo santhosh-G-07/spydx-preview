@@ -3,14 +3,9 @@ import { motion } from "framer-motion";
 import { Cog, Cloud, ShoppingCart, Quote, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SectionWrapper from "@/components/SectionWrapper";
+import FloatingTechStack from "@/components/FloatingTechStack";
 import heroBg from "@/assets/hero-bg.jpg";
-import infoImg from "@/assets/info.jpg";
-
-const techStack = [
-  "AWS", "Python", "JavaScript", "TypeScript", "ReactJS", "Redux",
-  "Node.js", "Express", "MongoDB", "PostgreSQL", "MySQL", "Docker",
-  "Tailwind", "MUI", "Figma", "Framer", "Overleaf", "GSAP",
-];
+import whyChooseImg from "@/assets/why-choose.jpg";
 
 const testimonials = [
   {
@@ -144,7 +139,7 @@ const Home = () => {
           </div>
           <div className="bg-card rounded-2xl p-1 border border-border shadow-glow">
             <img
-              src={infoImg}
+              src={whyChooseImg}
               alt="Why Choose SpydX"
               className="rounded-xl w-full"
               loading="lazy"
@@ -170,26 +165,13 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Tech Stack */}
+      {/* Tech Stack - Floating Icons */}
       <SectionWrapper>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-display mb-3">Our Tech Stack</h2>
           <p className="text-muted-foreground text-lg">We build with the latest and greatest tools</p>
         </div>
-        <div className="flex flex-wrap justify-center gap-3">
-          {techStack.map((tech, i) => (
-            <motion.span
-              key={tech}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: i * 0.04 }}
-              className="px-5 py-2.5 rounded-full bg-card text-sm font-medium text-muted-foreground border border-border hover:border-primary/30 hover:text-primary transition-all cursor-default"
-            >
-              {tech}
-            </motion.span>
-          ))}
-        </div>
+        <FloatingTechStack />
       </SectionWrapper>
 
       {/* Testimonials */}
