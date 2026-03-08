@@ -58,7 +58,22 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold font-display mb-6"
           >
-            Spyd<span className="text-brand-x">X</span>
+            Spyd
+            <motion.span
+              className="text-brand-x inline-block"
+              animate={{
+                y: [0, -12, 0, 8, 0],
+                rotate: [0, 3, -2, 1, 0],
+                scale: [1, 1.08, 1, 1.04, 1],
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              X
+            </motion.span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
