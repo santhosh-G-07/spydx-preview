@@ -200,7 +200,7 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-            Stay In The Loop With SpydX
+            Stay In The Loop With Spyd<span className="text-brand-x">X</span>
           </h2>
           <p className="text-muted-foreground mb-8 text-lg">
             Get updates, insights, and insider news directly from our team.
