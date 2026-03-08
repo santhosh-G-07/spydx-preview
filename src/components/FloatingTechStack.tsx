@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const techItems = [
   { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" },
@@ -29,8 +29,8 @@ const generateRandomPosition = (index: number, total: number) => {
   const cellW = 100 / cols;
   const cellH = 100 / Math.ceil(total / cols);
   return {
-    x: cellW * col + cellW * 0.2 + Math.random() * cellW * 0.5,
-    y: cellH * row + cellH * 0.15 + Math.random() * cellH * 0.5,
+    x: cellW * col + cellW * 0.15 + Math.random() * cellW * 0.6,
+    y: cellH * row + cellH * 0.1 + Math.random() * cellH * 0.6,
   };
 };
 
@@ -40,13 +40,13 @@ const FloatingTechStack = () => {
   );
 
   return (
-    <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-2xl bg-card/30 border border-border">
+    <div className="relative w-full h-[420px] md:h-[500px] overflow-visible">
       {techItems.map((tech, i) => {
         const pos = positions[i];
-        const duration = 4 + Math.random() * 4;
-        const delay = Math.random() * 2;
-        const floatY = 10 + Math.random() * 20;
-        const floatX = 5 + Math.random() * 10;
+        const duration = 5 + Math.random() * 5;
+        const delay = Math.random() * 3;
+        const floatY = 20 + Math.random() * 40;
+        const floatX = 10 + Math.random() * 20;
 
         return (
           <motion.div
@@ -59,30 +59,28 @@ const FloatingTechStack = () => {
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: i * 0.06 }}
             animate={{
-              y: [0, -floatY, 0, floatY * 0.5, 0],
-              x: [0, floatX, 0, -floatX * 0.7, 0],
-              rotate: [0, 3, -2, 1, 0],
+              y: [0, -floatY, 0, floatY * 0.6, 0],
+              x: [0, floatX, 0, -floatX * 0.8, 0],
+              rotate: [0, 5, -3, 2, 0],
             }}
-            whileHover={{ scale: 1.3, zIndex: 50 }}
+            whileHover={{ scale: 1.4, zIndex: 50 }}
             //@ts-ignore
             transition={{
               y: { duration, repeat: Infinity, ease: "easeInOut", delay },
-              x: { duration: duration * 1.3, repeat: Infinity, ease: "easeInOut", delay: delay + 0.5 },
-              rotate: { duration: duration * 1.5, repeat: Infinity, ease: "easeInOut", delay },
+              x: { duration: duration * 1.2, repeat: Infinity, ease: "easeInOut", delay: delay + 0.5 },
+              rotate: { duration: duration * 1.4, repeat: Infinity, ease: "easeInOut", delay },
               scale: { duration: 0.2 },
+              opacity: { duration: 0.5, delay: i * 0.06 },
             }}
           >
-            <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-card border border-border shadow-lg flex items-center justify-center group-hover:border-primary/40 group-hover:shadow-glow transition-all duration-300">
-              <img
-                src={tech.icon}
-                alt={tech.name}
-                className="w-7 h-7 md:w-8 md:h-8"
-                loading="lazy"
-              />
-            </div>
-            <span className="text-[10px] md:text-xs font-medium text-muted-foreground group-hover:text-primary transition-colors">
+            <img
+              src={tech.icon}
+              alt={tech.name}
+              className="w-10 h-10 md:w-12 md:h-12 drop-shadow-[0_0_8px_hsl(var(--brand-accent)/0.3)] group-hover:drop-shadow-[0_0_20px_hsl(var(--brand-accent)/0.6)] transition-all duration-300"
+              loading="lazy"
+            />
+            <span className="text-[10px] md:text-xs font-medium text-muted-foreground/70 group-hover:text-primary transition-colors">
               {tech.name}
             </span>
           </motion.div>
