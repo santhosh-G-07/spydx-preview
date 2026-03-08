@@ -16,7 +16,7 @@ const HeroSection = ({ title, subtitle, children, highlight }: HeroSectionProps)
       backgroundSize: '60px 60px'
     }} />
     
-    <div className="container mx-auto px-4 text-center relative z-10 pt-20">
+    <div className="container mx-auto px-4 text-center relative z-10">
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
