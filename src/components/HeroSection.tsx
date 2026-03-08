@@ -9,7 +9,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ title, subtitle, children, highlight }: HeroSectionProps) => (
-  <section className="relative min-h-[60vh] flex items-center justify-center bg-hero-gradient overflow-hidden">
+  <section className="relative min-h-[50vh] flex items-center justify-center bg-hero-gradient overflow-hidden pt-20 pb-12">
     {/* Grid overlay */}
     <div className="absolute inset-0 opacity-5" style={{
       backgroundImage: 'linear-gradient(hsl(185 80% 50% / 0.3) 1px, transparent 1px), linear-gradient(90deg, hsl(185 80% 50% / 0.3) 1px, transparent 1px)',
